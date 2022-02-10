@@ -3,7 +3,7 @@ const typeDefs = require('./db/schema');
 const resolvers = require('./db/resolvers');
 const conectarDB = require('./config/mongodb');
 const jwt = require('jsonwebtoken');
-require('dotenv').config({ path: 'variables.env' });
+require('dotenv').config({ path: '.env' });
 
 // Conectar a la base de datos
 conectarDB();
